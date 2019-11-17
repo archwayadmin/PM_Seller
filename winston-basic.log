@@ -1,0 +1,36 @@
+{"level":"info","message":"navigating to the web site","timestamp":"2019-11-17T05:08:27.598Z"}
+{"level":"info","message":"Maximize web site","timestamp":"2019-11-17T05:08:27.601Z"}
+{"level":"info","message":"Enter Username","timestamp":"2019-11-17T05:08:27.604Z"}
+{"level":"info","message":"Enter Passwor","timestamp":"2019-11-17T05:08:27.606Z"}
+{"level":"info","message":"Enter Submit Button","timestamp":"2019-11-17T05:08:27.607Z"}
+{"level":"info","message":"Click on MasterMenu","timestamp":"2019-11-17T05:12:03.540Z"}
+{"level":"info","message":"Click on Product Icon","timestamp":"2019-11-17T05:12:03.541Z"}
+{"level":"info","message":"Click on New ProductIcon","timestamp":"2019-11-17T05:12:03.542Z"}
+{"level":"info","message":"Enter Product ID","timestamp":"2019-11-17T05:12:03.543Z"}
+{"level":"info","message":"Enter Product Name","timestamp":"2019-11-17T05:12:03.544Z"}
+{"level":"info","message":"Enter Product Description","timestamp":"2019-11-17T05:12:03.545Z"}
+{"level":"info","message":"Select value from dropdown","timestamp":"2019-11-17T05:12:03.546Z"}
+{"level":"info","message":"Enter effctive Date","timestamp":"2019-11-17T05:12:03.547Z"}
+{"level":"info","message":"Enter Expiray Date","timestamp":"2019-11-17T05:12:03.548Z"}
+{"level":"info","message":"Click on checkBox","timestamp":"2019-11-17T05:12:03.549Z"}
+{"level":"info","message":"Click on Save Button","timestamp":"2019-11-17T05:12:03.550Z"}
+{"level":"info","message":"Click on MasterMenu","timestamp":"2019-11-17T05:12:15.760Z"}
+{"level":"info","message":"Click on Category","timestamp":"2019-11-17T05:12:15.762Z"}
+{"level":"info","message":"Click on new  Category icon","timestamp":"2019-11-17T05:12:15.763Z"}
+{"level":"info","message":"Enter Category ID","timestamp":"2019-11-17T05:12:15.765Z"}
+{"level":"info","message":"Enter Category name","timestamp":"2019-11-17T05:12:15.766Z"}
+{"level":"info","message":"Click on Category description","timestamp":"2019-11-17T05:12:15.767Z"}
+{"level":"info","message":"Click on create Button","timestamp":"2019-11-17T05:12:15.768Z"}
+{"level":"info","message":"click on User Icon","timestamp":"2019-11-17T05:12:27.890Z"}
+{"level":"info","message":"click on User Icon","timestamp":"2019-11-17T05:12:27.892Z"}
+{"level":"info","message":"click on New User Icon","timestamp":"2019-11-17T05:12:27.893Z"}
+{"level":"info","message":"Enter FirstName","timestamp":"2019-11-17T05:12:27.895Z"}
+{"level":"info","message":"Enter Second Name","timestamp":"2019-11-17T05:12:27.896Z"}
+{"level":"info","message":"Enter Email","timestamp":"2019-11-17T05:12:27.897Z"}
+{"level":"info","message":"Enter email-id","timestamp":"2019-11-17T05:12:27.898Z"}
+{"level":"info","message":"click on User Group Icon","timestamp":"2019-11-17T05:12:27.899Z"}
+{"level":"info","message":"click on select all option","timestamp":"2019-11-17T05:12:27.899Z"}
+{"level":"info","message":"Enter Phone Number","timestamp":"2019-11-17T05:12:27.900Z"}
+{"level":"info","message":"selects the department","timestamp":"2019-11-17T05:12:27.901Z"}
+{"level":"info","message":"click on checkbox","timestamp":"2019-11-17T05:12:27.902Z"}
+{"level":"info","message":"click create Button","timestamp":"2019-11-17T05:12:27.903Z"}
