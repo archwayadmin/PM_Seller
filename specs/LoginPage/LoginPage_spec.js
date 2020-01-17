@@ -10,11 +10,13 @@ var xl=require('./../../util/ReadExcel.js');
  
 var dataReaderObj=require('./../../util/DataReader.js');
 
-//describe("Login to Application", function() {
-	
-//	var testData=xl.readFromExcel('login','');
+
+browser.manage().timeouts().implicitlyWait(4000);
 
 describe('Login Page - ', function () {
+	
+
+	
     var dataReadPromise = dataReaderObj.ReadDataFromFile('testdata', 'login');
     var username = [];
     var password = [];
@@ -35,33 +37,30 @@ describe('Login Page - ', function () {
             }
         });
     });
-
+    
+    
     it('should login the user', function () {
+    	
         dataReadPromise.then(function () {
-            //helperObj.IsNonAngularPage(true);
+           
+           
+            page.OpenUrl(url[0]);
             
            
-
-//           allure.createStep('START --> Login User specification........', function () {
-//           })();
-            page.OpenUrl(url[0]);
-//            allure.createStep('Opened the Url.', function () {
-//            }
-//            )();
-            
             browser.driver.manage().window().maximize();
+            
 
             loginPageObj.EnterUsername(username[0]);
-//            allure.createStep('Entered username.', function () {
-//            })();
+            
 
             loginPageObj.EnterPassword(password[0]);
-//            allure.createStep('Entered password.', function () {
-//            })();
+        
 
             loginPageObj.ClickLoginButton();
-//            allure.createStep('Clicked on login button.', function () {
-//            })();
+            
+            
+            browser.sleep(4000);
+            
             
             
         });
@@ -107,6 +106,21 @@ describe('Login Page - ', function () {
     	
     	
     });
+    
+  
+   
+   it("Verify User has looged successfully", function() {
+	   
+	 var url=  browser.getCurrentUrl();
+	 
+	 expect(url).toContain("https://archway-premiernutrition-seller-qa.azurewebsites.net/home");
+   	
+	   
+	   
+	   
+	   
+	   
+   });
 
 
 

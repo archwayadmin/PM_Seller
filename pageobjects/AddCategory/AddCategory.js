@@ -1,8 +1,12 @@
+
+var page = require('./../../pageobjects/BasePage/BasePage.js');
+
 var AddCategory;
 
 AddCategory= function(){
 	
 var masterMenuIcon=element(by.xpath("//button[contains(text(),'Master Menu')]"));
+
 	
 var categoryLink=	element(by.xpath("//a[contains(text(),'Categories')]"));
 
@@ -18,6 +22,7 @@ var clickOnCreateBtn= element(by.xpath("//button[@class='btn btn-primary mt-4 w-
 
 this.clickOnMasterMenu= function(){
 	
+ page.highlightElement(masterMenuIcon)
 	
 	masterMenuIcon.click();
 }
@@ -27,11 +32,16 @@ this.clickOnMasterMenu= function(){
 
 this.clickOnCategoryLink= function(){
 	
+	page.highlightElement(categoryLink);
+	
 	categoryLink.click();
 	
 };
 
 this.clickOnNewCategoryLink= function(){
+	
+	page.highlightElement(newCategoryLink);
+	
 	
 	newCategoryLink.click();
 	
@@ -39,11 +49,19 @@ this.clickOnNewCategoryLink= function(){
 
 this.enterValueInCategoryId= function(value){
 	
+	page.highlightElement(categoryId);
+	
+	categoryId.clear();
+	
 	categoryId.sendKeys(value);
 	
 };
 
 this.enterValueInCategoryName= function(value){
+	
+	page.highlightElement(categoryName);
+	
+	categoryName.clear();
 	
 	categoryName.sendKeys(value);
 	
@@ -51,11 +69,17 @@ this.enterValueInCategoryName= function(value){
 
 this.enterValueInDescription= function(value){
 	
+	page.highlightElement(categoryDescription);
+	
+	categoryDescription.clear();
+	
 	categoryDescription.sendKeys(value);
 	
 };
 
 this.clickOnCreateButton= function(){
+	
+	page.highlightElement(clickOnCreateBtn);
 	
 	clickOnCreateBtn.click();
 	

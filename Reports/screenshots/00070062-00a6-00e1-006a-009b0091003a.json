@@ -1,0 +1,1 @@
+{"description":"Verify Address link in header present on Address page|verify address","passed":true,"pending":false,"os":"Windows","instanceId":4244,"browser":{"name":"chrome","version":"79.0.3945.88"},"message":"Passed.","trace":"","browserLogs":[],"screenShotFile":"00070062-00a6-00e1-006a-009b0091003a.png","timestamp":1577964874257,"duration":74}

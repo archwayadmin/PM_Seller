@@ -1,6 +1,13 @@
+
+var tdata = require('./../../json/user.json');
+
+
 var users;
 
 users = function() {
+	
+	//var val=tdata.testdata.UserGroup;
+	
 
 	var userIcon = element(by.xpath("//a[contains(text(),'Users')]"));
 	
@@ -33,6 +40,47 @@ users = function() {
 	var selectall=  element(by.xpath("//div[@id='userFormNew']//div[contains(text(),'Select All')]"));
 	
 	var createIcon= element(by.xpath("//button[contains(text(),'Create')]"));
+	
+	var yesIcon= element(by.xpath("//shared-modal[3]/div[1]/div[1]/div[3]/div[1]/button[1]"));
+	
+	var noIcon= element(by.xpath("//shared-modal[3]/div[1]/div[1]/div[3]/div[1]/button[2]"));
+	
+	var successmessage= element(by.xpath("//div[@id='toast-container']"));
+	
+      var search=element(by.xpath("//div[@id='userFormNew']//input[@placeholder='Search']"));
+      
+     var ele= element(by.xpath("//shared-modal[1]/div[1]/div[1]/user-form[1]/ngb-accordion[1]/div[1]/div[2]/form[1]/div[1]/div[3]/div[1]/ng-multiselect-dropdown[1]/div[1]/div[2]/ul[2]/li[1]/div[1]"));
+	
+	this.clickOnYesIcon= function(){
+		
+		yesIcon.click();
+		
+	};
+	
+	this.getMessage= function(){
+		
+	successmessage.getText().then(function(text){
+		
+		console.log(text);
+			
+			
+			
+		})	;
+		
+	};
+	
+	this.getSuccessmessage= function(){
+		
+		return successmessage;
+		
+		
+	};
+	
+	this.clickOnNoIcon= function(){
+		
+		noIcon.click();
+		
+	};
 
 	this.clickOnUserIcon = function() {
 
@@ -71,6 +119,14 @@ users = function() {
 	this.clickOnUserGroup= function(){
 		
 		group.click();
+		
+	};
+	
+	this.selectValueFromUserGroup= function(){
+		
+		ele.click();
+		
+		
 		
 	};
 	

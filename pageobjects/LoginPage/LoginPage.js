@@ -1,37 +1,73 @@
 
 var OR= require('./../../json/objects.json');
+
+var page = require('./../../pageobjects/BasePage/BasePage.js');
 var LoginPage;
 LoginPage = function () {
 
     var usernameTxtBx = element(by.xpath(OR.locators.Loginpage.username));
     
+    var userNameLable= element(by.xpath("//label[contains(text(),'User Name')]"));
+    
     var passwordTxtBx = element(by.xpath(OR.locators.Loginpage.password));
+    
+    var passwordLable= element(by.xpath("//label[contains(text(),'Password')]"));
    
     var loginBtn = element(by.xpath(OR.locators.Loginpage.submitBtn));
     
+    var errorMessage= element(by.xpath("//div[@id='toast-container']"));
     
-    this.login= function(){
-    	
-    	
-    	
   
     	
+    this.getUserNameLable= function(){
     	
-    }
+    	return userNameLable;
+    	
+    };
+    
+ 	
+    this.getPasswordLable= function(){
+    	
+    	return passwordLable;
+    	
+    };
+    
+ this.getloginBtnLable= function(){
+    	
+    	return loginBtn;
+    	
+    };
+    
+    this.getErrorMessage= function(){
+    	
+    	
+    	return errorMessage;
+    	
+    	
+    };
+    
 
     
     this.EnterUsername = function (value) {
+    	
+    	page.highlightElement(usernameTxtBx);
     	
         usernameTxtBx.sendKeys(value);
     };
 
     this.EnterPassword = function (value) {
+    	
+    	page.highlightElement(passwordTxtBx);
+    	
         passwordTxtBx.sendKeys(value);
     };
 
    
 
     this.ClickLoginButton = function () {
+    	
+    	page.highlightElement(loginBtn);
+    	
         loginBtn.click();
     };
     
@@ -49,10 +85,8 @@ LoginPage = function () {
 			
 		});
     	
-    	
-    	
-    	
-    };
+
+};
 
 };
 

@@ -3,6 +3,9 @@ var announcement;
 
 announcement= function(){
 	
+	var masterMenuOption=element(by.xpath("//button[contains(text(),'Master Menu')]"));
+	
+	
 	var announcementIcon= element(by.xpath("//button[@class='btn btn-primary float-right mt-3 mb-2']"));
 	
 	var announcementValue=element(by.xpath("//div[@class='ngx-editor-textarea']"));
@@ -15,6 +18,14 @@ announcement= function(){
 	
 	var createIcon= element(by.xpath("//button[@class='btn btn-primary btn-block']"));
 	
+
+	 this.clickOnMastermenu= function(){
+			
+			
+	masterMenuOption.click();
+		
+	 };
+	
 	
 	this.clickOnNewIcon= function(){
 		
@@ -25,6 +36,8 @@ announcement= function(){
 	
 	this.enterAnnouncementValue= function(value){
 		
+		announcementValue.clear();
+		
 		
 		announcementValue.sendKeys(value)
 		
@@ -33,11 +46,15 @@ announcement= function(){
 	
 	this.enterStartdate= function(value){
 		
+		endDate.clear();
+		
 		endDate.sendKeys(value);
 		
 	};
 	
    this.enterEnddate= function(value){
+	   
+	   endDate.clear();
 		
 	endDate.sendKeys(value);
 		
@@ -51,20 +68,6 @@ announcement= function(){
 	};
 	 
 	 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	

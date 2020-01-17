@@ -19,6 +19,12 @@ OrderSummary= function(){
 	
 	
 	
+	
+	
+	
+	
+	
+	
 };
 
 module.exports= new OrderSummary();

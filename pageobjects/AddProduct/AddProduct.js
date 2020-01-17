@@ -2,6 +2,8 @@
 
 var OR= require('./../../json/objects.json');
 
+var page = require('./../../pageobjects/BasePage/BasePage.js');
+
 var addProduct;
 
 addProduct= function(){
@@ -40,11 +42,15 @@ addProduct= function(){
 	
 	this.clickOnMastermenu= function(){
 		
+		page.highlightElement(masterMenuOption);
+		
 		masterMenuOption.click();
 		
 	};
 	
 	this.clickOnProduct= function(){
+		
+		page.highlightElement(ProductOPtion);
 		
 		ProductOPtion.click();
 		
@@ -52,11 +58,15 @@ addProduct= function(){
 	
 	this.clickOnNewProductIcon= function(){
 		
+		page.highlightElement(newProduct);
+		
 		newProduct.click();
 		
 	};
 	
 	this.enterProductId= function(value){
+		
+		page.highlightElement(productId);
 		
 		productId.sendKeys(value);
 		
@@ -64,11 +74,15 @@ addProduct= function(){
 	
 	this.enterProductName= function(value){
 		
+		page.highlightElement(productName);
+		
 		productName.sendKeys(value);
 		
 	};
 	
 	this.enterProductDescription= function(value){
+		
+		page.highlightElement(productDescription);
 		
 		productDescription.sendKeys(value)
 		
@@ -76,11 +90,15 @@ addProduct= function(){
 	
 	this.clickOnSaveButton= function(){
 		
+		page.highlightElement(saveButton);
+		
 		saveButton.click();
 		
 	};
 	
 	this.clickOnCheckbox= function(){
+		
+		page.highlightElement(chkbox);
 		
 		chkbox.click();
 		
@@ -89,11 +107,15 @@ addProduct= function(){
 	
 	this.enterEffectiveDate= function(value){
 		
+		page.highlightElement(effectiveDate);
+		
 		effectiveDate.sendKeys(value);
 		
 	};
 	
    this.enterExpirDate= function(value){
+	   
+	   page.highlightElement(expiryDate);
 		
 	expiryDate.sendKeys(value);
 		
